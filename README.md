@@ -1,5 +1,10 @@
 # Django Project Base
 
+## Clone repository
+```python
+git clone https://github.com/Michel-Rooney/django-project-base.git (your project name)
+```
+
 ## Create the virtual environment
 ```python
 # Linux
