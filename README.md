@@ -1,7 +1,7 @@
 # Django Project Base
 
 ## Clone repository
-```python
+```git
 git clone https://github.com/Michel-Rooney/django-project-base.git (your project name)
 ```
 
@@ -15,7 +15,7 @@ python -m venv environment
 ```
 
 ## Activate the virtual environment
-```python
+```
 # Linux
 source environment/bin/activate
 
