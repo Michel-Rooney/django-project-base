@@ -1,6 +1,6 @@
 # Django Project Base
 
-## Criar o ambiente virtual
+## Create the virtual environment
 ```python
 # Linux
 python3 -m venv environment
