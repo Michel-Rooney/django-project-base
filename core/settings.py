@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'INSECURE')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True if os.environ.get('DEBUG') == '1' else False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split(',')
 
 
 # Application definition
@@ -133,10 +133,11 @@ MEDIA_ROOT = BASE_DIR / 'media'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
+# Messsages
 MESSAGE_TAGS = {
-    constants.DEBUG: 'message-debug',
-    constants.ERROR: 'message-error',
-    constants.INFO: 'message-info',
-    constants.SUCCESS: 'message-success',
-    constants.WARNING: 'message-warning',
+    constants.DEBUG: 'alert-primary',
+    constants.ERROR: 'alert-danger',
+    constants.SUCCESS: 'alert-success',
+    constants.INFO: 'alerto-info',
+    constants.WARNING: 'alert-warning'
 }
